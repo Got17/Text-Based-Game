@@ -106,9 +106,10 @@ a {
 
 .click-continue { 
     margin-top: 30px;
-    font-size: 20px;
-    letter-spacing: .15em;
+    display:flex;
 }
+
+
 
 .continue-button-section {
     display: flex;
@@ -142,8 +143,35 @@ a {
 
 .welcome-subtext {
     font-size: 20px;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
     letter-spacing: .15em;
+}
+
+.click-to {
+    font-size: 20px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(255,255,255,.75); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 12em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255,255,255,.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
