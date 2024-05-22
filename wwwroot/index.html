@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GentleGame</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Content/styles.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+    <style>
+        /* Don't show the not-yet-loaded templates */
+        [ws-template], [ws-children-template] { display: none; }
+    </style>
+    <script type="text/javascript" src="Content/GentleGame.head.js"></script>
+</head>
+<body>
+    <div ws-replace="PageContent"></div>
+    <div ws-template="homepage">
+        <div class="logo-section">
+            <img class="logo" src="Content/Images/whiteLogo.png" alt="logo">
+            <div class="logo-text">Gentle Game</div>
+        </div>
+        <div class="welcome-section">
+            <div class="welcome-text">
+                Welcome to Gentle Text-Based Game <br>
+                <span class="welcome-subtext">press the button to start</span>
+            </div>
+            <div><a class="start-button" href="${ToGamePage}">Start</a></div>
+        </div>
+    </div>
+    <div ws-template="gamepageIntro">
+        <div class="header">
+
+            <div class="logo-section">
+                <img class="logo" src="Content/Images/whiteLogo.png" alt="greenLogo">
+                <div class="logo-text">Gentle Game</div>
+            </div>
+
+            <div class="game-section">
+                <div class="image-section">
+                    <img style="margin-bottom:50px;" class="game-image" src="Content/Images/mysticalLand.png" alt="MysticalLand">
+                </div>
+                <div class="game-description">
+                    You are an adventurer in the mystical land of Eldoria. Legends speak of a powerful amulet hidden deep within the Forest of Whispers. This amulet is said to grant immense power to its bearer, and many have sought it, but none have returned.
+                </div>
+                <div class="click-continue">
+                    <a href="${toGamePageStart}">>> Click to continue</a>
+                </div>
+            </div>
+
+            <div class="playerProfile">
+                <img class="player-image" src="Content/Images/playerProfile.png" alt="playerProfile">
+            </div>
+        </div>
+    </div>
+    <div ws-template="gamepageStart">
+        <div class="header">
+
+            <div class="logo-section">
+                <img class="logo" src="Content/Images/whiteLogo.png" alt="greenLogo">
+                <div class="logo-text">Gentle Game</div>
+            </div>
+
+            <div class="game-section">
+                <div class="image-section">
+                    <img class="game-image" src="Content/Images/playerStart.png" alt="start">
+                </div>
+                <div class="game-description">
+                    You start your journey at the edge of the Forest of Whispers, armed with a simple sword, a map, and a torch. The forest is dense and dark, with the sound of unseen creatures echoing around you.
+                </div>
+                <div class="click-continue">
+                    <a href="${toGamePageLocation}">>> Click to continue</a>
+                </div>
+            </div>
+
+            <div class="playerProfile">
+                <img class="player-image" src="Content/Images/playerProfile.png" alt="playerProfile">
+            </div>
+        </div>
+
+    </div>
+    <div ws-template="gamepageLocation">
+        <div class="header">
+
+            <div class="logo-section">
+                <img class="logo" src="Content/Images/whiteLogo.png" alt="greenLogo">
+                <div class="logo-text">Gentle Game</div>
+            </div>
+
+            <div class="game-section">
+                <div class="image-section">
+                    <img class="game-image" src="Content/Images/${gameImage}.png" alt="${gameImage}">
+                </div>
+                <div class="game-description">
+                    <span class="game-location">Location: ${location}</span><br />
+                    ${description}
+                </div>
+                <div class="continue-button-section" ws-hole="continueButtonSection">
+                    <!-- Buttons will be injected here -->
+                </div>
+            </div>
+
+            <div class="playerProfile">
+                <img class="player-image" src="Content/Images/playerProfile.png" alt="playerProfile">
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="Content/GentleGame.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GentleGame", "GentleGame.fsproj", "{A9CE670D-8C38-4812-8C79-AEC710517AB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9CE670D-8C38-4812-8C79-AEC710517AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CE670D-8C38-4812-8C79-AEC710517AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CE670D-8C38-4812-8C79-AEC710517AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CE670D-8C38-4812-8C79-AEC710517AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {531A1302-96A2-485F-94CA-1D7C176E0F0F}
+	EndGlobalSection
+EndGlobal
