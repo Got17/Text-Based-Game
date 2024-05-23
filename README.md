@@ -51,11 +51,11 @@ Before you start, ensure you have the following installed:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Got17/Text-Based-Game-with-FSharp.git
+   git clone https://github.com/Got17/Text-Based-Game.git
    ```
 2. Navigate to the project directory
    ```sh
-   cd Text-Based-Game-with-FSharp
+   cd Text-Based-Game
    ```
 ### Usage
 
