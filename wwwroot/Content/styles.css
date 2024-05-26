@@ -11,7 +11,7 @@ a {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -49,16 +49,6 @@ a {
     }
 
 
-.playerProfile {
-    position: relative;
-    right: 50px;
-    top: 50px;
-}
-
-.player-image {
-    height: 150px;
-}
-
 .logo-section {
     display: flex;
     align-items: center;
@@ -78,17 +68,18 @@ a {
 }
 
 .game-section {
-    margin-top: 20px;
+    margin: 20px 20px;
     width: 700px;
 }
 
 .image-section {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .game-image {
-    height: 300px;
+    margin-bottom: 10px;
 }
 
 .game-description {
@@ -175,3 +166,4 @@ a {
         border-right-color: transparent;
     }
 }
+
