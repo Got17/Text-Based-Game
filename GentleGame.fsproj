@@ -12,6 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="8.0.7" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="8.0.0" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
     <PackageReference Include="WebSharper" Version="6.1.5.317" />    
     <PackageReference Include="WebSharper.FSharp" Version="6.1.5.317" />
     <PackageReference Include="WebSharper.MathJS" Version="6.1.5.317" />
@@ -20,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Update="FSharp.Core" Version="8.0.300" />
+    <PackageReference Update="FSharp.Core" Version="8.0.301" />
   </ItemGroup>
 
 </Project>
