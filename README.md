@@ -24,7 +24,7 @@ GentleGame is a text-based adventure game built using F# and WebSharper. The gam
 
 ## Preview
 
-You can see a live preview of the website [here](https://gentlegame.azurewebsites.net).
+You can see a live preview of the website [here](https://got17.github.io/Text-Based-Game/).
 
 ## Project Structure
 
